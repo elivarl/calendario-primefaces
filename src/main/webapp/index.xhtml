@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="utf-8" name="viewport"
+		content="width=device-width, initial-scale=1"
+		http-equiv="X-UA-Conpatible" />
+	<title>Ejemplo Calendar Primefaces</title>
+</h:head>
+<h:body>
+	<h1>Ejemplo Calendario</h1>
+	<h:form>
+		<h:panelGrid columns="2" cellspacing="1">
+				<p:outputLabel>Calendario</p:outputLabel>
+				<p:calendar value="#{calendar.date}"></p:calendar>
+				
+		</h:panelGrid>
+		<p:commandButton value="Enviar" action="#{calendar.onClick(calendar.date)}"></p:commandButton>
+	</h:form>
+
+</h:body>
+</html>
